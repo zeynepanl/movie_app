@@ -19,13 +19,13 @@ const ThemeComp = () => {
       {theme === "dark" ? (
         <CiLight
           onClick={() => setTheme("light")}
-          className="cursor-pointer"
+          className="cursor-pointer text-white"
           size={25}
         />
       ) : (
         <CiDark
           onClick={() => setTheme("dark")}
-          className="cursor-pointer"
+          className="cursor-pointer text-black"
           size={25}
         />
       )}
