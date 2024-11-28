@@ -2,11 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Varsayılan Renkler */
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
+/* Dark Mode İçin Renkler */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -14,8 +16,8 @@
   }
 }
 
+/* Tüm Uygulama İçin Temel Stiller */
 body {
-  color: var(--foreground);
-  background: var(--background);
+  @apply text-black bg-white dark:text-white dark:bg-black;
   font-family: Arial, Helvetica, sans-serif;
 }
